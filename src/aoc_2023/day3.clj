@@ -59,7 +59,6 @@
                  (distinct (map (partial look-back grid)
                              (map #(map + pt %) directions)))))]
     (when (= 2 (count nums)) (apply * (map #(Integer/parseInt %) nums)))))
-
 (defn soln-p2
   [grid]
   (let [labels (range 1 (dec (count grid)))

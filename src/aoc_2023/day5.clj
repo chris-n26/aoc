@@ -62,7 +62,7 @@
 (defn -main
   "Evaluate solutions"
   [& args]
-  (let [[seeds & map-data] (parse-data "data/day5.txt")]
+  (let [[seeds & map-data] (parse-data "data/aoc_2023/day5.txt")]
     (println (str "solution for part 1: " (soln-p1 seeds map-data)))
     (let [seed-intvls (map #(list (first %) (dec (reduce + %)))
                            (partition 2 seeds))]

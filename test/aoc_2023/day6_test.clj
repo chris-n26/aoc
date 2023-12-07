@@ -4,11 +4,11 @@
 
 (deftest p1-examples
   (testing "using examples provided in question"
-    (let [test-race-stats (parse-data "data/test_day6.txt")]
+    (let [test-race-stats (parse-data "data/aoc_2023/test_day6.txt")]
       (is (= (soln-p1 test-race-stats) 288)))))
 
 (deftest p2-examples
   (testing "using examples provided in question"
-    (let [test-race-stats (parse-data "data/test_day6.txt")
+    (let [test-race-stats (parse-data "data/aoc_2023/test_day6.txt")
           test-merge-race-stat (merge-stats test-race-stats)]
       (is (= (soln-p2 test-merge-race-stat) 71503)))))

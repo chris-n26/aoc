@@ -45,6 +45,6 @@
 (defn -main
   "Evaluate solutions"
   [& args]
-  (let [cards (parse-data "data/day4.txt")]
+  (let [cards (parse-data "data/aoc_2023/day4.txt")]
     (println (str "solution for part 1: " (soln-p1 cards)))
     (println (str "solution for part 2: " (soln-p2 cards)))))

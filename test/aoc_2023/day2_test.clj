@@ -1,6 +1,6 @@
 (ns aoc-2023.day2-test
-  (:require [clojure.test :refer :all]
-            [aoc-2023.day2 :refer :all]
+  (:require [clojure.test :refer [deftest testing is are]]
+            [aoc-2023.day2 :refer [soln-p1 soln-p2 parse-game valid-game]]
             [clojure.string :as str]))
 
 (deftest parse-game-test
@@ -29,11 +29,11 @@
 (deftest p1-examples
   (testing "using examples provided in question"
     (let [test-data (map #(str/split % #": ")
-                      (str/split-lines (slurp "data/test_day2.txt")))]
+                      (str/split-lines (slurp "data/aoc_2023/test_day2.txt")))]
       (is (= (soln-p1 test-data) 8)))))
 
 (deftest p2-examples
   (testing "using examples provided in question"
     (let [test-data (map #(str/split % #": ")
-                         (str/split-lines (slurp "data/test_day2.txt")))]
+                         (str/split-lines (slurp "data/aoc_2023/test_day2.txt")))]
       (is (= (soln-p2 test-data) 2286)))))

@@ -26,6 +26,6 @@
 (defn -main
   "Evaluate solutions"
   [& args]
-  (let [data (str/split-lines (slurp "data/day1.txt"))]
+  (let [data (str/split-lines (slurp "data/aoc_2023/day1.txt"))]
     (println (str "solution for part 1: " (soln-p1 data)))
     (println (str "solution for part 2: " (soln-p2 data)))))

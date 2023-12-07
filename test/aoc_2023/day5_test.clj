@@ -4,12 +4,14 @@
 
 (deftest p1-examples
   (testing "using examples provided in question"
-    (let [[test-seeds & test-map-data] (parse-data "data/test_day5.txt")]
+    (let [[test-seeds & test-map-data] (parse-data
+                                         "data/aoc_2023/test_day5.txt")]
       (is (= (soln-p1 test-seeds test-map-data) 35)))))
 
 (deftest p2-examples
   (testing "using examples provided in question"
-    (let [[test-seeds & test-map-data] (parse-data "data/test_day5.txt")
+    (let [[test-seeds & test-map-data] (parse-data
+                                         "data/aoc_2023/test_day5.txt")
           test-seed-intvls (map #(list (first %) (dec (reduce + %)))
-                       (partition 2 test-seeds))]
+                             (partition 2 test-seeds))]
       (is (= (soln-p2 test-seed-intvls test-map-data) 46)))))

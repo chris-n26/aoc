@@ -71,6 +71,6 @@
 (defn -main
   "Evaluate solutions"
   [& args]
-  (let [schematics (parse-data "data/day3.txt")]
+  (let [schematics (parse-data "data/aoc_2023/day3.txt")]
     (println (str "solution for part 1: " (soln-p1 schematics)))
     (println (str "solution for part 2: " (soln-p2 schematics)))))

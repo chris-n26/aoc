@@ -32,6 +32,6 @@
   "Evaluate solutions"
   [& args]
   (let [data (map #(str/split % #": ")
-               (str/split-lines (slurp "data/day2.txt")))]
+               (str/split-lines (slurp "data/aoc_2023/day2.txt")))]
     (println (str "solution for part 1: " (soln-p1 data)))
     (println (str "solution for part 2: " (soln-p2 data)))))

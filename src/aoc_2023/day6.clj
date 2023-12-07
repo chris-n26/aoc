@@ -25,7 +25,7 @@
 (defn -main
   "Evaluate solutions"
   [& args]
-  (let [race-stats (parse-data "data/day6.txt")]
+  (let [race-stats (parse-data "data/aoc_2023/day6.txt")]
     (println (str "solution for part 1: " (soln-p1 race-stats)))
     (let [merge-race-stat (merge-stats race-stats)]
       (println (str "solution for part 2: " (soln-p2 merge-race-stat))))))

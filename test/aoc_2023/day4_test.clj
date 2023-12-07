@@ -4,10 +4,10 @@
 
 (deftest p1-examples
   (testing "using examples provided in question"
-    (let [test-data (parse-data "data/test_day4.txt")]
+    (let [test-data (parse-data "data/aoc_2023/test_day4.txt")]
       (is (= (soln-p1 test-data) 13)))))
 
 (deftest p2-examples
   (testing "using examples provided in question"
-    (let [test-data (parse-data "data/test_day4.txt")]
+    (let [test-data (parse-data "data/aoc_2023/test_day4.txt")]
       (is (= (soln-p2 test-data) 30)))))
